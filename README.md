@@ -6,5 +6,5 @@ Este repositorio contiene diferentes tutoriales que resultan relevantes para las
 
 - [Git](git/readme.md)
     - [Conexión SSH con Github](git/connect_ssh.md)
-
 - [Línea de Comandos](cli/readme.md)
+    - [Operaciones Básicas](cli/basic_operations.md)

@@ -1,6 +1,6 @@
 # Conexión SSH con Github
 
-[Paos a Pasos](../README.md) / [Git](readme.md)
+[Paso a Pasos](../README.md) / [Git](readme.md)
 
 ___
 
