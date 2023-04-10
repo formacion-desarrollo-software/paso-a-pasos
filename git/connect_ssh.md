@@ -45,7 +45,7 @@ Este tutorial muestra los pasos para configurar una llave SSH y conectarla con n
     Enter file in which to save the key (/Users/my_user/.ssh/id_ed25519):
     ```
 
-    La anterior opción se usa para indicar el nombre del archivo donde va a quedar guardada la clave SSH. Si lo desea puede cambiarle el nombre, para lo cual tendría que indicar la ruta completa del archivo, por ejemplo: `/Users/my_user/.ssh/id_ed25519_mia`
+    La anterior opción se usa para indicar el nombre del archivo donde va a quedar guardada la clave SSH. Si lo desea puede cambiarle el nombre, para lo cual tendría que indicar la ruta completa del archivo, que para este caso podría ser: `/Users/my_user/.ssh/id_ed25519_mia`
 
 4. Aparecerá el siguiente mensaje:
 
@@ -53,9 +53,9 @@ Este tutorial muestra los pasos para configurar una llave SSH y conectarla con n
     Enter passphrase (empty for no passphrase):
     ```
 
-    Introduzca una contraseña. Verá que al escribir la contraseña esta no se muestra en la terminal. Esto es normal.
+    Para este caso no vamos a introducir una contraseña. Como la intensión es tener una configuración que no nos vuelva a pedir contraseña cada vez que queramos hacer una operación contra Github, no tiene mucho sentido agregar una contraseña a la clave ssh. La seguridad va a recaer en el acceso al computador en el que trabajemos. Quien tenga acceso a él podrá hacer uso de la clave ssh. Entonces, en este paso solo damos Enter.
 
-5. Repita la contraseña al aparecer el siguiente mensaje:
+5. Vuelva a dar Enter al aparecer el siguiente mensaje:
 
     ```bash
     Enter same passphrase again:
@@ -101,7 +101,7 @@ Este tutorial muestra los pasos para configurar una llave SSH y conectarla con n
 3. Agrega al archivo las siguientes líneas. Este paso solo es necesario para usuario Mac:
 
     ```txt
-    Host *.github.com
+    Host github.com
       AddKeysToAgent yes
       UseKeychain yes
       IdentityFile ~/.ssh/id_ed25519
